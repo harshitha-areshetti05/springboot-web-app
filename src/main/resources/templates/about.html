@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>About - Spring Boot Web App</title>
+    <title>About Page</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/main.js" defer></script>
 </head>
 <body>
     <header>
-        <h1 id="about-title">About This Application</h1>
+        <h1>About</h1>
         <nav>
-            <ul>
-                <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="/about" class="nav-link">About</a></li>
-            </ul>
+            <a href="/">Home</a> |
+            <a href="/about">About</a>
         </nav>
     </header>
 
     <main>
-        <section id="about-content">
+        <div class="about-description">
+            <h2>About This Application</h2>
             <p>This is a simple Spring Boot app that serves multiple HTML pages.</p>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <p id="footer-text">© 2025 Spring Boot Web App</p>
+        <p>&copy; 2025 Spring Boot Web App</p>
     </footer>
 </body>
 </html>
